@@ -1,0 +1,295 @@
+.Header{
+    box-sizing: border-box;
+    background: #fff;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 150px;
+}
+.content{
+    background-image: url('../../../src/img/shutterstock_266498825.jpg');
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* padding: 20px; */
+}
+.content h3{
+    color: black;
+    font-size: 50px;
+    width: 40%;
+        margin-top: 50px;
+        margin-left: 50px;
+}
+.content .main{
+    color: #444;
+    font-size: 20px;
+    width: 40%;
+        margin-top: 10px;
+        margin-left: 50px;
+}
+.content .main-btn{
+    color: #fff;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    background-color: black;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 0;
+}
+.content button:hover{
+    background-color: #fff;
+    color: black;
+}
+.contentimg{
+    display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 350px;
+}
+.contentimg .img{
+     background-image: url('../../../src/img/shutterstock_266558153.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: right; */
+    border-radius: 5px;
+    border: 5px solid #fff;
+    width: 30%;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    position: relative;
+    /* position: absolute; */
+}
+.content .img h4{
+    font-size: 25px;
+    margin-left: 200px;
+    color: #fff;
+}
+.content .img .headpar{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+.content .img button{
+    color: #fff;
+    background-color: transparent;
+    font-size: 10px;
+    /* margin-top: 50px; */
+    /* margin-left: 0; */
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 280px;
+    /* position: absolute;
+        top: 45px; */
+        background: #9f418a;
+    /* padding: 5px; */
+}
+.content .imgtwo{
+     background-image: url('../../../src/img/shutterstock_267639224.jpg'); 
+    background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right; */
+        border-radius: 5px;
+        border: 5px solid #fff;
+        width: 30%;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    /* position: absolute; */
+}
+.content .imgtwo h4 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.content .imgtwo .headpar {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.content .imgtwo button {
+    color: #fff;
+    background-color: transparent;
+    font-size: 10px;
+    /* margin-top: 50px; */
+    /* margin-left: 0; */
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    margin-top: 15px;
+    /* position: absolute;
+        top: 45px; */
+        background: #9f418a;
+    /* padding: 5px; */
+}
+.content .imgthree{
+     background-image: url('../../../src/img/shutterstock_720115000-min.jpg'); 
+    background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: right; */
+        border-radius: 5px;
+        border: 5px solid #fff;
+        width: 30%;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    position: relative;
+}
+/* .imgthree img{
+    width: 100%;
+} */
+.content .imgthree h4 {
+    margin-top: 80px;
+    font-size: 25px;
+    margin-left: 200px;
+    color: #fff;
+}
+
+.content .imgthree .headpar {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.content .imgthree button {
+    color: #fff;
+    background-color: transparent;
+    font-size: 10px;
+    /* margin-top: 50px; */
+    /* margin-left: 0; */
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    position: absolute;
+    top: 45px;
+    background: #9f418a;
+    /* margin-top: 15px; */
+    /* padding: 5px; */
+}
+/* .content .imgthree button::after{
+        content: '';
+            width: 103%;
+            height: 23px;
+            display: block;
+            position: relative;
+            background: #fff;
+            top: 0;
+} */
+
+/* .img .overlay{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: 1;
+} */
+.contentimg h4, .contentimg .headpar, .contentimg button::after{
+    content: '';
+    width: 50%;
+    background:#9f418a;;
+}
+@media only screen and (max-width: 1200px) {
+    .content .img h4{
+        margin-left: 6.5em;
+    }
+        .content .img .headpar {
+            margin-left: 10.5em;
+        }
+                .content .img button {
+                    margin-left: 9.5em;
+                }
+                 .content .imgthree h4 {
+                      margin-left: 6.3em;
+                                }
+                 .content .imgthree .headpar {
+                      margin-left: 10.3em;
+                                }
+
+}
+@media only screen and (max-width: 550px) {
+    .Header{
+        margin-bottom: 40px;
+    }
+    .contentimg{
+        top: 380px;
+        left: 50%;
+        right: 50%;
+            transform: translate(-50%, 0);
+    }
+    .content h3{
+        font-size: 30px;
+    }
+    .content .main{
+        font-size: 15px;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .content .main-btn{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .contentimg .img{
+        height: 200px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+    .contentimg .imgtwo{
+        height: 200px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+    .contentimg .imgthree{
+        height: 200px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+    .content .img h4{
+        margin-left: 0.5em;
+        font-size: 10px;
+    }
+         .content .imgtwo h4{
+             margin-left: 0.5em;
+             font-size: 10px;
+         }
+        .content .img .headpar, .content .imgtwo .headpar {
+            margin-left: 0.5em;
+            font-size: 10px;
+        }
+                .content .img button, .content .imgtwo button {
+                    margin-left: 0.5em;
+                    font-size: 10px;
+                }
+                 .content .imgthree h4 {
+                      margin-left: 0.3em;
+                      font-size: 10px;
+                                }
+                 .content .imgthree .headpar {
+                      margin-left: 0.3em;
+                      font-size: 10px;
+                                }
+
+}

@@ -1,0 +1,32 @@
+.Menu{
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 333;
+}
+.menu{
+    width: 100%;
+}
+.Menu li{
+    list-style: none;
+    margin: 10px auto;
+}
+.MenuA{
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 333;
+    
+}
+.MenuA li{
+    list-style: none;
+    margin: 10px auto;
+}

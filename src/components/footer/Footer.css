@@ -1,0 +1,108 @@
+.Footer{
+    width: 100%;
+        padding: 80px 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
+.contact, .links, .my-account, .newsletter{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    height: 113px;
+    justify-content: space-around;
+    flex: 1;
+    width: 25%;
+}
+.contact .icons{
+    margin: 7px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+}
+.contact .icons i{
+    font-size: 15px;
+        border: 1px solid #777;
+        border-radius: 50%;
+        padding: 7px;
+        height: 28px;
+        margin-right: 15px;
+        width: 50px;
+            display: flex;
+                justify-content: center;
+                align-items: center;
+}
+
+.contact .icons i:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+h5{
+    margin: 10px 7px;
+    font-size: 20px;
+    text-align: start;
+}
+.footpara{
+    margin: 7px;
+    color: #777;
+    text-align: start;
+}
+input{
+    width: 70%;
+    outline: none;
+    border: 0;
+}
+.input{
+    position: relative;
+    margin-bottom: 20px;
+}
+.input::after{
+    content: '';
+    width: 75%;
+    height: 2px;
+    background-color: rgb(195, 191, 191);
+        color: #777;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+}
+.list{
+    color:#777;
+}
+span{
+    margin: 7px 7px 7px 0;
+}
+@media only screen and (max-width:550px){
+    .Footer{
+        padding: 20px 10px;
+    }
+    h5{
+        margin: 5px;
+        font-size: 10px;
+    }
+    .footpara{
+        margin: 5px;
+        font-size: 10px;
+    }
+    .icons{
+        margin: 5px;
+    }
+    .Footer .icons i{
+        font-size: 10px;
+        margin-right: 5px;
+        padding: 5px;
+        height: 15px;
+        width: 15px;
+    }
+    span{
+        margin: 5px 5px 5px 0;
+        font-size: 8px;
+    }
+    .input{
+        margin-bottom: 5px;
+    }
+
+}

@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import Backtotop from "./components/backtotop/Backtotop";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import HowIt from "./components/howitwork/HowIt";
+import Menu from "./components/menu/Menu";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
+  const [menu, setMenu] = useState(false);
+  const handleMenu = () => {
+    // console.log("first");
+    menu === false ? setMenu(true) : setMenu(false);
+    // console.log(menu);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar brand="Brand." handleMenu={handleMenu} />
+      <Menu menu={menu} />
+      <Header />
+      <HowIt />
+
+      <Footer />
+      <Backtotop />
     </div>
   );
 }

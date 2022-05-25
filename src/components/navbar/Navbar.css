@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    flex-direction: row;
+    color: black;
+    padding: 0.5em;
+    z-index: 1;
+    background-color: transparent;
+}
+.navA{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    flex-direction: row;
+    color: black;
+    padding: 2.5em;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
+.nav h2{ 
+    /* color: aquamarine; */
+ }
+.center{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+        flex: 2;
+}
+.nav ul, .navA ul{
+    list-style: none;
+    display: flex;
+    
+}
+.nav ul .menulist, .navA ul .menulist{
+    margin-left: 0.438em; 
+    margin-right: 0.438em; 
+    position: relative;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 0px;
+    transition: border-bottom 2s ease-in-out;
+}
+ul .menulist::after{
+        content: '';
+            width: 0%;
+            height: 10%;
+            background-color: black;
+            color: wheat;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            border-radius: 20px;
+            transition: width 0.5s ease-in-out;
+}
+ul .menulist:hover:after{
+    width: 100%;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right .icons{
+    margin-right: 2.083em;
+    width: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.center-mob{
+    display: none;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        transform: translate(50%, 50%);
+        position: absolute;
+        top: 30%;
+        left: 47%;
+}
+@media only screen and (max-width: 550px){
+    .center{
+        display: none;
+    }
+    .nav,.navA{
+        position: fixed;
+        padding: 2.5em;
+        width: 100%;
+        background-color: white;
+    }
+        .center-mob{
+            display: flex;
+        }
+}

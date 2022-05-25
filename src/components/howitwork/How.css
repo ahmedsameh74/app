@@ -1,0 +1,92 @@
+.how{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+.how h4{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.how .first{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            margin-bottom: 50px;
+}
+.first .search{
+    display: flex;
+        flex-direction: column;
+        /* height: 150px; */
+        justify-content: center;
+        /* border: 1px solid #888; */
+                box-shadow: 0px 1px 16px 3px #dbd8d8;
+                border-radius: 8px;
+                margin-right: 35px;
+                    height: 220px;
+                        width: 25%;
+}
+.search i{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.search .searchhead{
+    margin-bottom: 10px;
+    font-size: 25px;
+
+}
+.search .searchpar{
+        width: 50%;
+        font-size: 20px;
+            /* margin: 10px auto; */
+            margin: 0 auto 10px auto;
+}
+.how .second{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+}
+.second .search{
+    display: flex;
+        flex-direction: column;
+        /* height: 150px; */
+        justify-content: center;
+        /* border: 1px solid #888; */
+            box-shadow: 0px 1px 16px 3px #dbd8d8;
+        border-radius: 8px;
+        margin-right: 35px;
+            height: 220px;
+                width: 25%;
+
+}
+@media only screen and (max-width:550px){
+    .first .search{
+        height: 150px;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .second{
+        width: 100%;
+    }
+         .second .search{
+             height: 150px;
+             /* width: 30%; */
+             /* flex: 1; */
+             width: calc(100%/3);
+             margin-right: auto;
+             margin-left: auto;
+         }
+    .search i{
+        font-size: 20px;
+    }
+        .search .searchhead {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+    .search .searchpar{
+        font-size: 10px;
+    }
+}
